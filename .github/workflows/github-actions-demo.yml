@@ -22,6 +22,7 @@ jobs:
       - name : List ALl files int he repository
         run: |
          echo "The files inside the repository is  ${{github.repository}} "
+         tree
       
 
   
