@@ -5,15 +5,14 @@ on:
     paths-ignore: [.github/**]
     
   pull_request:
-    branches: 
-    - main
+    branches: [main]
   schedule:
     - cron: "0 2 * * 1-5"
   workflow_dispatch:
     
 jobs:
   Build:
-    name: build workflow
+    
     runs-on: ubuntu-latest
     steps:
       - run: |
